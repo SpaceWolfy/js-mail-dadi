@@ -88,16 +88,15 @@ button.addEventListener('click', function () {
     //-Se il numero del giocatore 1 è maggiore di quello del giocatore 2, vince il giocatore uno
     //-Viceversa vince il giocatore 2
     //-Altrimenti è un pareggio
+    outputHtml2 = document.querySelector('.winner')
+
     if(numPlayer1 > numPlayer2) {
-        outputHtml2 = document.querySelector('.winner')
         outputHtml2.innerHTML = '<h3>Ha vinto il Player 1</h3>';
         console.log('Ha vinto il giocatore 1');
     } else if (numPlayer1 < numPlayer2) {
-        outputHtml2 = document.querySelector('.winner')
         outputHtml2.innerHTML = '<h3>Ha vinto il Player 2</h3>';
         console.log('Ha vinto il giocatore 2 (Computer)');
     } else {
-        outputHtml2 = document.querySelector('.winner')
         outputHtml2.innerHTML = '<h3>Pareggio!</h3>';
         console.log('Pareggio');
     }
