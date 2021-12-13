@@ -1,23 +1,28 @@
 //Mail
 
-/* 
 const verifiedMail = ['mimmo@gmail.com', 'pino@libero.it', 'gino@hotmail.com'];
 let mailPresente = false;
 
 let mailUtente = prompt('Qual è la tua mail?');
 
+let outputHtml = document.querySelector('.printmail')
+
 for(let i = 0; i < verifiedMail.length; i++) {
     if (mailUtente === verifiedMail[i]) {
         mailPresente = true;
     }
+
+    outputHtml.innerHTML = `<div class="padding-top">${mailUtente} </div>`
 }
 
 if(mailPresente) {
+    outputHtml.innerHTML += '<h4 class="padding-top">Accesso Confermato</h4>'
     console.log('Accesso confermato');
 } else {
+    outputHtml.innerHTML += '<h4 class="padding-top">Accesso Negato</h4>'
     console.log('Accesso negato');
 }
-*/
+
 
 //Dadi
 
